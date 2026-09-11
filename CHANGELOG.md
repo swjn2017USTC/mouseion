@@ -7,6 +7,79 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [3.0.0](https://github.com/swjn2017USTC/mouseion/compare/v2.0.1...v3.0.0) (2026-09-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **icons:** custom icons must move from `<Icon name="col:name" />` + astro.config `icon.include` to a `~icons/col/name` import. Default icon size is now 1.2em (unplugin default); add `scale: 1` to restore 1em.
+
+### refactor
+
+* **icons:** replace astro-icon with unplugin-icons ([#11](https://github.com/swjn2017USTC/mouseion/issues/11)) ([623f890](https://github.com/swjn2017USTC/mouseion/commit/623f8900f01840277a44307161a3be8beaf161cd))
+
+
+### Features
+
+* add announcements, tutorials, and interactive code examples for advanced post features ([11749e0](https://github.com/swjn2017USTC/mouseion/commit/11749e02f14df1a14b76cca19d41d203b0cb1ebe))
+* add breadcrumb navigation and structured data for SEO ([0eaf598](https://github.com/swjn2017USTC/mouseion/commit/0eaf59818fc8d149944cdf972b36e67910dd67d1))
+* add CI workflow and improve project configuration ([e934a85](https://github.com/swjn2017USTC/mouseion/commit/e934a858e204b9c59b67b358bd9a4969323741d1))
+* add citation badges, coauthor profiles, and improved metadata for publications ([b693279](https://github.com/swjn2017USTC/mouseion/commit/b693279f9605b0330384ae6528f81aa91363394a))
+* add featured posts, tag/category list, and improve blog page layout ([a5322b5](https://github.com/swjn2017USTC/mouseion/commit/a5322b502210dac92bf0512c5fb6394661e39da1))
+* add foundational physics project pages and enhance publication search functionality ([dd036e5](https://github.com/swjn2017USTC/mouseion/commit/dd036e5fc4a51e479077e4ea0f2dd853201db1b7))
+* add GitLab CI/CD pipeline and deployment instructions ([#3](https://github.com/swjn2017USTC/mouseion/issues/3)) ([5233003](https://github.com/swjn2017USTC/mouseion/commit/5233003fbf2881b9978f0c643b1c328aff19379f))
+* add image optimization domains to Astro config ([46671f8](https://github.com/swjn2017USTC/mouseion/commit/46671f89608bbd1915b310ebaac52b75618fd8a6))
+* add pseudocode support with KaTeX and MathJax integration, and enhance breadcrumb navigation ([fff2630](https://github.com/swjn2017USTC/mouseion/commit/fff26307eed17d0611a96e523c99e5619a2f7c72))
+* add smoke tests, JSON schemas, and utility tests for improved validation and coverage ([d457799](https://github.com/swjn2017USTC/mouseion/commit/d4577994a898748a8384019ae1e4a6186b169ff2))
+* add styled tooltips for interactive annotations and icons ([611bff7](https://github.com/swjn2017USTC/mouseion/commit/611bff7bac3ee389d88e6e1a4763a1f6aa280874))
+* automate citation updates with OpenAlex integration and GitHub Actions workflow ([a5f4181](https://github.com/swjn2017USTC/mouseion/commit/a5f4181376bf82787131742a58353b164d7f2c05))
+* bundle KaTeX CSS locally and enhance Shiki dark mode styles ([e68761a](https://github.com/swjn2017USTC/mouseion/commit/e68761aff54cab3283fcf36c81239e985e6740dc))
+* enhance as-folio features with dark mode, selected publications, and external posts integration ([738315b](https://github.com/swjn2017USTC/mouseion/commit/738315bcff30d9b7c51e4f3dc7255f6a58a621e6))
+* enhance blog structure with pagination, tag/category pages, and social sharing ([dfec5ea](https://github.com/swjn2017USTC/mouseion/commit/dfec5ea15caf43a2a142d3605289c82192e19fec))
+* enhance build process, dependencies, and RSS customization ([d992691](https://github.com/swjn2017USTC/mouseion/commit/d992691edf581e274386faa66ae6e4292cb3c7b2))
+* enhance navbar functionality with AbortController for improved View Transition support ([f65a32f](https://github.com/swjn2017USTC/mouseion/commit/f65a32f795318d7ef236422aa97343e7e0bec47f))
+* enhance projects page layout and add support for related publications with references ([6a16851](https://github.com/swjn2017USTC/mouseion/commit/6a16851d5e21ae486458b9eb47271021977987f9))
+* enhance SEO, improve accessibility, and refine layouts ([b8fff88](https://github.com/swjn2017USTC/mouseion/commit/b8fff8852f3f39c750828d82b209d385affac08d))
+* extract `ProjectCard` component and enhance projects layout ([b5350ae](https://github.com/swjn2017USTC/mouseion/commit/b5350aec870b81a3474797bb553bdea48b1c6836))
+* group blog posts by year, add support for draft and last modified dates ([0da42ec](https://github.com/swjn2017USTC/mouseion/commit/0da42ec262dda5729fab40709aedde6554dbad8b))
+* implement custom sitemap generator and remove dependency on @astrojs/sitemap ([b3b505a](https://github.com/swjn2017USTC/mouseion/commit/b3b505a7b3f43f5d10179e10b99f0f755cee99dc))
+* improve sitemap generation with git-based `<lastmod>` dates fallback ([69aed7d](https://github.com/swjn2017USTC/mouseion/commit/69aed7d97a18053376dc878be173f11f34ebfa71))
+* initial as-folio commit ([4ee075d](https://github.com/swjn2017USTC/mouseion/commit/4ee075dd58fab2f97aaaa63e89e2239ae1edd200))
+* integrate content-based search with ninja-keys and improve theme sync ([76d3e41](https://github.com/swjn2017USTC/mouseion/commit/76d3e41731149a6be2e2ebc369f7603a27313c1a))
+* integrate release-please workflow and improve project documentation ([054e733](https://github.com/swjn2017USTC/mouseion/commit/054e73361eec334dea223844e771774e096243c0))
+* integrate Satori for dynamic OG image generation and enhance lazy loading for comments ([70f448c](https://github.com/swjn2017USTC/mouseion/commit/70f448c23cdd83c29eeeeb9ae199b6f10861aad0))
+* introduce `withBase` utility for base path management and update image/script handling ([60d4cef](https://github.com/swjn2017USTC/mouseion/commit/60d4cefc742e78fcaede6a1ceaf3ad2fc0bb8f55))
+* make deployment workflow and site config customizable via environment variables ([0c2ba3e](https://github.com/swjn2017USTC/mouseion/commit/0c2ba3e65051677cfc27e025e3304bf8479aa35a))
+* refine typography and layout for improved readability and consistency ([2667a5a](https://github.com/swjn2017USTC/mouseion/commit/2667a5a45309ed5dd9f601450551e7f64a427f35))
+* self-host fonts via Fontsource and add sticky footer support ([26dd4c6](https://github.com/swjn2017USTC/mouseion/commit/26dd4c60b564715d172ddff5402d2e5de5f82314))
+* update bio template, enhance project visuals, and improve publication search ([44039f8](https://github.com/swjn2017USTC/mouseion/commit/44039f84a7ac848e44d557c3880dee719133a6ff))
+
+
+### Bug Fixes
+
+* **config:** move markdown plugins onto the unified() processor ([#13](https://github.com/swjn2017USTC/mouseion/issues/13)) ([ff08be6](https://github.com/swjn2017USTC/mouseion/commit/ff08be6d746e48f71ff798d7d58e788e78742d5b))
+* **og:** pass the font Buffer to satori instead of its pooled .buffer ([#7](https://github.com/swjn2017USTC/mouseion/issues/7)) ([059d3b4](https://github.com/swjn2017USTC/mouseion/commit/059d3b4a7b63b20e2f795b5534cfd04939df2d29))
+* **theme:** honor site theme.color, add hover config ([#10](https://github.com/swjn2017USTC/mouseion/issues/10)) ([2f1cd36](https://github.com/swjn2017USTC/mouseion/commit/2f1cd366a2802acc0d8cced90b2b51b7c71141d6))
+
+
+### Miscellaneous
+
+* add MIT license file to repository ([b6160a9](https://github.com/swjn2017USTC/mouseion/commit/b6160a9878c71af1e68bc813a1a36e927b3a37fb))
+* add width and height attributes for images and adjust dependencies ([2c0f8f3](https://github.com/swjn2017USTC/mouseion/commit/2c0f8f346114d4be78eae434a10e4e5b3cf91326))
+* **deps:** bump checkout & setup-node to v5 (Node 24 runtime) ([#6](https://github.com/swjn2017USTC/mouseion/issues/6)) ([882aaf3](https://github.com/swjn2017USTC/mouseion/commit/882aaf3d9781d28cde143ab1e74daac0757ce161))
+* **main:** release 1.1.0 ([#1](https://github.com/swjn2017USTC/mouseion/issues/1)) ([b882dad](https://github.com/swjn2017USTC/mouseion/commit/b882dada90ffb456e52ba2984b2dd62def2f017e))
+* **main:** release 1.2.0 ([#4](https://github.com/swjn2017USTC/mouseion/issues/4)) ([0b7728e](https://github.com/swjn2017USTC/mouseion/commit/0b7728e68adb6729be980f1a80c7a72c0ac58eef))
+* **main:** release 1.2.1 ([#8](https://github.com/swjn2017USTC/mouseion/issues/8)) ([de3f6b9](https://github.com/swjn2017USTC/mouseion/commit/de3f6b9ca859ee5a6c1b75076333ccee1289871a))
+* **main:** release 1.2.2 ([#9](https://github.com/swjn2017USTC/mouseion/issues/9)) ([7c09a10](https://github.com/swjn2017USTC/mouseion/commit/7c09a10df7131e8f5e41a48a16fba6dafbc23675))
+* **main:** release 2.0.0 ([#12](https://github.com/swjn2017USTC/mouseion/issues/12)) ([5b4fa3b](https://github.com/swjn2017USTC/mouseion/commit/5b4fa3b6efce89efbb7b74f83e05e2a0a9e3cb5c))
+* **main:** release 2.0.1 ([#14](https://github.com/swjn2017USTC/mouseion/issues/14)) ([6a30d3e](https://github.com/swjn2017USTC/mouseion/commit/6a30d3e835830233f655820d42cde41d9b61ed2c))
+* update citation counts [skip ci] ([11f19bd](https://github.com/swjn2017USTC/mouseion/commit/11f19bd8c9fbec5e7b572419640ea7ee3e9510c3))
+* update citation counts [skip ci] ([6e82f43](https://github.com/swjn2017USTC/mouseion/commit/6e82f433b10b1f83ab1395abb8e6cead5ceab8e1))
+* update citation counts [skip ci] ([6ac9a27](https://github.com/swjn2017USTC/mouseion/commit/6ac9a273375dc01149b577e2974fb1089e790c4f))
+* update citation counts [skip ci] ([94f1251](https://github.com/swjn2017USTC/mouseion/commit/94f12512dd694a772777c9b88441a8a3db3f9cb3))
+* update citation counts [skip ci] ([92bea82](https://github.com/swjn2017USTC/mouseion/commit/92bea8279da69152e5c3aa5788131e204cd439cb))
+* upgrade all deps to latest stable + pagefind search enhancements ([#5](https://github.com/swjn2017USTC/mouseion/issues/5)) ([0ad52f4](https://github.com/swjn2017USTC/mouseion/commit/0ad52f450796b870cb54a4242f7b330bbdabe433))
+
 ## [2.0.1](https://github.com/dadangnh/as-folio/compare/v2.0.0...v2.0.1) (2026-08-02)
 
 
